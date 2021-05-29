@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://i.pinimg.com/originals/09/f4/72/09f4726125ab5fa8cbcf754b9ba07e7c.jpg" />
+
+    <title>Thinkful-Tube</title>
+
+    <meta
+      name="description"
+      content="A simple youtube search page using YouTube's Data API."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Thinkful-Tube" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:description"
+      content="AA simple youtube search page using YouTube's Data API"
+    />
+    <meta
+      property="og:image"
+      content="https://i.pinimg.com/originals/09/f4/72/09f4726125ab5fa8cbcf754b9ba07e7c.jpg"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="/script.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <!-- the wrapper and content divs set margins and positioning -->
+    <div class="wrapper">
+      <div class="content" role="main">
+        <!-- this is the start of content for our page -->
+        <h1 class="title">YouTube Search</h1>
+        <h2 class="title">Search for a video</h2>
+        <form action="submit" id="search-term">
+          <input type="text" id="query" />
+          <button type="submit">Submit</button>
+        </form>
+        <div id="search-results"></div>
+        <div class="iframe-tube"></div>
+      </div>
+    </div>
+  </body>
+</html>
